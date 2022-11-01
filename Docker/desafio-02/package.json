@@ -11,7 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mysql2": "^2.3.3"
+    "express-rescue": "^1.2.0",
+    "knex": "^2.3.0",
+    "mysql": "^2.18.1",
+    "rescue": "^6.0.4"
   }
 }
