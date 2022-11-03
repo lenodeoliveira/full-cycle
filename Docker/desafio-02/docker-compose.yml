@@ -30,3 +30,10 @@ services:
       - db
     env_file:
       - ./.env
+  
+  nginx:
+        restart: always
+        build:
+            context: ./nginx
+        ports:
+            - "80:80"
