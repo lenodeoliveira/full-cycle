@@ -19,6 +19,7 @@ services:
       - ./data:/var/lib/mysql
   api:
     container_name: api
+    entrypoint: wait-for db:3306 -t 40 -- ./start.sh
     image: node:16
     restart: always
     build:
