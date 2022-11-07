@@ -15,14 +15,11 @@ const getAllUsers= async () => {
   const users = await db.select('name')
   .from('peoples')
 
-    if(!users.length) {
-        await addUsersService()
-    }
-
   return users
 };
 
 
 module.exports = {
     getAllUsers,
+    addUsersService
 }
