@@ -64,8 +64,8 @@ type ComplexityRoot struct {
 	}
 
 	Query struct {
-		Categoies func(childComplexity int) int
-		Courses   func(childComplexity int) int
+		Categories func(childComplexity int) int
+		Courses    func(childComplexity int) int
 	}
 }
 
@@ -74,7 +74,7 @@ type MutationResolver interface {
 	CreateCourse(ctx context.Context, input model.NewCourse) (*model.Course, error)
 }
 type QueryResolver interface {
-	Categoies(ctx context.Context) ([]*model.Category, error)
+	Categories(ctx context.Context) ([]*model.Category, error)
 	Courses(ctx context.Context) ([]*model.Course, error)
 }
 
@@ -173,12 +173,12 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 
 		return e.complexity.Mutation.CreateCourse(childComplexity, args["input"].(model.NewCourse)), true
 
-	case "Query.categoies":
-		if e.complexity.Query.Categoies == nil {
+	case "Query.categories":
+		if e.complexity.Query.Categories == nil {
 			break
 		}
 
-		return e.complexity.Query.Categoies(childComplexity), true
+		return e.complexity.Query.Categories(childComplexity), true
 
 	case "Query.courses":
 		if e.complexity.Query.Courses == nil {
@@ -283,7 +283,7 @@ input NewCourse {
 }
 
 type Query {
-  categoies: [Category!]!
+  categories: [Category!]!
   courses: [Course!]!
 }
 
@@ -877,8 +877,8 @@ func (ec *executionContext) fieldContext_Mutation_createCourse(ctx context.Conte
 	return fc, nil
 }
 
-func (ec *executionContext) _Query_categoies(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Query_categoies(ctx, field)
+func (ec *executionContext) _Query_categories(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
+	fc, err := ec.fieldContext_Query_categories(ctx, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -891,7 +891,7 @@ func (ec *executionContext) _Query_categoies(ctx context.Context, field graphql.
 	}()
 	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
 		ctx = rctx // use context from middleware stack in children
-		return ec.resolvers.Query().Categoies(rctx)
+		return ec.resolvers.Query().Categories(rctx)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -908,7 +908,7 @@ func (ec *executionContext) _Query_categoies(ctx context.Context, field graphql.
 	return ec.marshalNCategory2ᚕᚖgithubᚗcomᚋfullᚑcycleᚋgraphqlᚋgraphᚋmodelᚐCategoryᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Query_categoies(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func (ec *executionContext) fieldContext_Query_categories(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Query",
 		Field:      field,
@@ -3134,7 +3134,7 @@ func (ec *executionContext) _Query(ctx context.Context, sel ast.SelectionSet) gr
 		switch field.Name {
 		case "__typename":
 			out.Values[i] = graphql.MarshalString("Query")
-		case "categoies":
+		case "categories":
 			field := field
 
 			innerFunc := func(ctx context.Context) (res graphql.Marshaler) {
@@ -3143,7 +3143,7 @@ func (ec *executionContext) _Query(ctx context.Context, sel ast.SelectionSet) gr
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._Query_categoies(ctx, field)
+				res = ec._Query_categories(ctx, field)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}

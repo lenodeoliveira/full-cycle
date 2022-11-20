@@ -24,7 +24,7 @@ input NewCourse {
 }
 
 type Query {
-  categoies: [Category!]!
+  categories: [Category!]!
   courses: [Course!]!
 }
 
