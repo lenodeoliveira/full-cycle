@@ -35,7 +35,7 @@
     * Listando Categorias
     * Trabalhando com strem
     * Tranbalhando com streams bidirecionais
-* ⌛️ GraphQL
+* ✅ GraphQL
     * Gerando esqueleto do servidor
     * Criando schema
     * Gerando esqueleto de nossa aplicação
@@ -48,7 +48,7 @@
     * Dados encadeados
     * Finalizando encadeamento de categorias
     * gqlgen
-* ⛔️ Service Discovery e Consul
+* ⌛️ Service Discovery e Consul
     * Entendendo o contexto
     * Visão geral do Consul
     * Service registry
