@@ -12,6 +12,7 @@ import CustomerRepository from './customer.repository'
 import OrderRepository from './order.repository'
 import ProductRepository from './product.repository'
 
+
 describe("Order repository test", () => {
     let sequelize: Sequelize;
   
@@ -81,4 +82,41 @@ describe("Order repository test", () => {
         ],
       });
     });
+
+    it("Should find a order", async () => {
+      //Customer
+      const customerRepository = new CustomerRepository();
+      const customer = new Customer("123", "Customer 1");
+      const address = new Address("Street 1", "Zipcode 1", "City 1", 1);
+      customer.changeAddress(address);
+      await customerRepository.create(customer);
+  
+      //Product
+      const productRepository = new ProductRepository();
+      const product = new Product("123", "Product 1", 10);
+      await productRepository.create(product);
+  
+      //Item
+      const ordemItem = new OrderItem(
+        "1",
+        product.name,
+        product.price,
+        2,
+        product.id,
+      );
+  
+      //Order
+      const order = new Order("123", "123", [ordemItem]);
+  
+      const orderRepository = new OrderRepository();
+      await orderRepository.create(order);
+  
+      const orderFound = await orderRepository.find(order.id)
+      expect(order).toStrictEqual(orderFound);
+    
+    });
+
   });
+
+
+
