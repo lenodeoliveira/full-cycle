@@ -853,7 +853,7 @@ FN:27,unregisterAll
 FNF:6
 FNH:3
 FNDA:1,get
-FNDA:2,get getEventHanlers
+FNDA:3,get getEventHanlers
 FNDA:0,notify
 FNDA:1,register
 FNDA:0,unregister
@@ -867,8 +867,8 @@ DA:6,1
 DA:7,1
 DA:8,1
 DA:9,1
-DA:10,2
-DA:11,2
+DA:10,3
+DA:11,3
 DA:12,1
 DA:13,1
 DA:14,1
@@ -890,7 +890,7 @@ DA:29,1
 LF:29
 LH:27
 BRDA:5,0,0,1
-BRDA:9,1,0,2
+BRDA:9,1,0,3
 BRDA:15,2,0,1
 BRF:3
 BRH:3
