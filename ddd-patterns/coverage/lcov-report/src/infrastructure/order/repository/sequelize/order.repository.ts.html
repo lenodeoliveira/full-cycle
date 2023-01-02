@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/domain/@shared/event/event-dispatcher.ts</title>
+    <title>Code coverage report for src/infrastructure/order/repository/sequelize/order.repository.ts</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../../../prettify.css" />
-    <link rel="stylesheet" href="../../../../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.png" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../../../sort-arrow-sprite.png);
+            background-image: url(../../../../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../../index.html">All files</a> / <a href="index.html">src/domain/@shared/event</a> event-dispatcher.ts</h1>
+        <h1><a href="../../../../../index.html">All files</a> / <a href="index.html">src/infrastructure/order/repository/sequelize</a> order.repository.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">92.72% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>46/46</span>
+                <span class='fraction'>51/55</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">60% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>3/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">92.72% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>46/46</span>
+                <span class='fraction'>51/55</span>
             </div>
         
             
@@ -108,7 +108,16 @@
 <a name='L43'></a><a href='#L43'>43</a>
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
-<a name='L46'></a><a href='#L46'>46</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -117,23 +126,8 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -153,52 +147,85 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import EventDispatcherInterface from "./event-dispatcher.interface";
-import EventHandlerInterface from "./event-handler.interface";
-import EventInterface from "./event.interface";
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import Order from "../../../../domain/checkout/entity/order";
+import OrderItem from "../../../../domain/checkout/entity/order_item";
+import OrderRepositoryInterface from "../../../../domain/checkout/repository/order-repository.interface";
+import OrderItemModel from "./order-item.model";
+import OrderModel from "./order.model";
 &nbsp;
-export default class EventDispatcher implements EventDispatcherInterface {
+export default class OrderRepository implements OrderRepositoryInterface{
+    
+<span class="fstat-no" title="function not covered" >    async update(entity: Order): Promise&lt;void&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      throw new Error("Method not implemented.");</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+    
+    async find(id: string): Promise&lt;Order&gt; {
+      const orderModel = await OrderModel.findOne({
+        where: { id: id },
+        include: ["items"],
+      })
+      
+      let orderItems;
+      if(orderModel.items.length &gt; 0) {
+          orderItems = orderModel.items.map((item) =&gt; {
+            const orderItemModel = new OrderItem(item.id, item.name, item.price, item.quantity, item.product_id)
+            return orderItemModel
+          })
+      }
 &nbsp;
-    private eventHandlers: { [eventName: string]: EventHandlerInterface[] } = {}
+      const orderFound = new Order(orderModel.id, orderModel.customer_id, orderItems);
+      return orderFound
 &nbsp;
-    get getEventHanlers(): {[eventName: string]: EventHandlerInterface[]} {
-        return this.eventHandlers
     }
     
-    register(eventName: string, eventHandler: EventHandlerInterface): void {
-        if (!this.eventHandlers[eventName]) {
-            this.eventHandlers[eventName] = []
+<span class="fstat-no" title="function not covered" >    async findAll(): Promise&lt;Order[]&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      throw new Error("Method not implemented.");</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+    
+    async create(entity: Order): Promise&lt;void&gt; {
+      await OrderModel.create(
+        {
+          id: entity.id,
+          customer_id: entity.customerId,
+          total: entity.total(),
+          items: entity.items.map((item) =&gt; ({
+            id: item.id,
+            name: item.name,
+            price: item.price,
+            product_id: item.productId,
+            quantity: item.quantity,
+          })),
+        },
+        {
+          include: [{ model: OrderItemModel }],
         }
-&nbsp;
-        this.eventHandlers[eventName].push(eventHandler)
+      );
     }
-&nbsp;
-    unregister(eventName: string, eventHanler: EventHandlerInterface&lt;EventInterface&gt;): void {
-        if(this.eventHandlers[eventName]) {
-            const index = this.eventHandlers[eventName].indexOf(eventHanler)
-            if(index !== -1) {
-                this.eventHandlers[eventName].splice(index, 1)
-            }
-        }
-    }
-&nbsp;
-    unregisterAll(): void {
-        this.eventHandlers = {}
-    }
-&nbsp;
-    notify(event: EventInterface): void {
-        const eventName = event.constructor.name
-&nbsp;
-        if(this.eventHandlers[eventName]) {
-            this.eventHandlers[eventName].forEach((eventHandler) =&gt; {
-                eventHandler.handle(event)
-            })
-        }
-        
-    }
-&nbsp;
-&nbsp;
-}</pre></td></tr></table></pre>
+  }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
@@ -207,14 +234,14 @@ export default class EventDispatcher implements EventDispatcherInterface {
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
                 at 2023-01-02T18:15:12.415Z
             </div>
-        <script src="../../../../prettify.js"></script>
+        <script src="../../../../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../../../../sorter.js"></script>
-        <script src="../../../../block-navigation.js"></script>
+        <script src="../../../../../sorter.js"></script>
+        <script src="../../../../../block-navigation.js"></script>
     </body>
 </html>
     
