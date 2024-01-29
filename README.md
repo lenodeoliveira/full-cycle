@@ -48,7 +48,7 @@
     * Dados encadeados
     * Finalizando encadeamento de categorias
     * gqlgen
-* ⌛️ Service Discovery e Consul
+* ✅ Service Discovery e Consul
     * Entendendo o contexto
     * Visão geral do Consul
     * Service registry
